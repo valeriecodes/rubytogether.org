@@ -15,6 +15,10 @@ class HomeController < ApplicationController
     @individual_count = Membership.individual.active.count
   end
 
+  def next
+    @cats = "meow"
+  end
+
   private
   def featured_companies
     Membership.featured_companies.named.active
