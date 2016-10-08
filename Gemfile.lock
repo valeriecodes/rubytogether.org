@@ -336,6 +336,7 @@ DEPENDENCIES
   rails (= 4.2.7.1)
   rails_12factor
   rdiscount
+  rest-client
   rollbar (~> 2.0)
   rspec-rails
   sass-rails (~> 5.0)

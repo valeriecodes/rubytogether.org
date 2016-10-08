@@ -4,7 +4,16 @@
 
 <section class="group">
   <h3 id="next-projects">Next Projects</h3>
-  <p><%= @cats %></p>
+
+  <ul>
+    <% @projects.each do |project| %>
+      <li>
+        <div><%= project['name'] %></div>
+        <div><%= project['body'] %></div>
+      </li>
+    <% end %>
+  </ul>
+
 </section>
 
 <%= render "join" %>

@@ -16,7 +16,7 @@ class HomeController < ApplicationController
   end
 
   def next
-    @cats = "meow"
+    @projects = Project.get
   end
 
   private

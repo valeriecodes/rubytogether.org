@@ -20,6 +20,7 @@ gem "sass-rails", "~> 5.0"
 gem "slack-notifier"
 gem "stripe_event", "~> 1.5"
 gem "uglifier", "~> 2.7"
+gem "rest-client"
 
 group :development do
   gem "guard-livereload", "~> 2.4", require: false
