@@ -1,4 +1,5 @@
 module ApplicationHelper
+  include WickedPdf::WickedPdfHelper::Assets
 
   def title(text = nil)
     if text
