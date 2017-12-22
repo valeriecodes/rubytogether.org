@@ -1,8 +1,6 @@
 class InvoiceController < ApplicationController
 
   def show
-    raise ActiveRecord::RecordNotFound unless Rails.env.development?
-
     @membership = Membership.find(params[:id])
     @bank_info = Rails.configuration.bank_info.map{|k,v| "#{k.humanize}: #{v}" }
     @amount = @membership.plan.amount / 100 * 12
